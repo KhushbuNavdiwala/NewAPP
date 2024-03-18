@@ -46,7 +46,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
             className="mx-auto min-h-full w-5/6 py-20">
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
+               
                 {/* Header Section */}
+
                 <motion.div
                     className="md:my-5 md:w-3/5 "
                     initial="hidden"
@@ -58,51 +60,57 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         visible: { opacity: 1, x: 0 }
                     }}
                 >
-                    <HText>
+     <HText> MORE THAN JUST A GYM. </HText>
+                    
+    <p className="my-5 text-sm">
+        We provide world class fitness equipment, trainers and classes to
+           get you to your ultimate fitness goals with ease. We provide true
+           care into each and every member.
+    </p>
 
-                        MORE THAN JUST A GYM.
+     </motion.div>
+     {/* Benefits Section */}
+    {/* this motion code is for when you reload page and how transition come its about that  */}
+     <motion.div
+        className="md:flex items-center justify-between
+         gap-8 mt-5"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={ container }
 
-                    </HText>
-                    <p className="my-5 text-sm">We provide world class fitness equipment, trainers and classes to
-                        get you to your ultimate fitness goals with ease. We provide true
-                        care into each and every member.
-                    </p>
+    >
+             {/* array  */}
+              {benefits.map((benefit: BenefitType) => (
+                  <Benefit
+                      key={benefit.title}
+                      icon={benefit.icon}
+                     title={benefit.title}
+                     description={benefit.description}
+                     setSelectedPage={setSelectedPage}
+                 />
+             ))}
+         </motion.div>
 
-                </motion.div>
-                {/* Benefits Section */}
-                {/* this motion code is for when you reload page and how transition come its about that  */}
-                <motion.div
-                    className="md:flex items-center justify-between gap-8 mt-5"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={{ container }}
+         {/*Graphic and description*/}
 
-                >
-                    {/* array  */}
-                    {benefits.map((benefit: BenefitType) => (
-                        <Benefit
-                            key={benefit.title}
-                            icon={benefit.icon}
-                            title={benefit.title}
-                            description={benefit.description}
-                            setSelectedPage={setSelectedPage}
-                        />
-                    ))}
-                </motion.div>
-                {/*Graphic and description*/}
-                <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
-                    {/*Graphic*/}
-                    <img
-                        className="mx-auto"
-                        alt="benefits-page-graphic"
-                        src={BenefitsPageGraphic} />
+        <div className="mt-16 items-center
+        justify-between gap-20 md:mt-28 md:flex">
+            
+            {/*Graphic*/}
+
+            <img
+                className="mx-auto"
+                alt="benefits-page-graphic"
+                src={BenefitsPageGraphic} />
 
                     {/* description*/}
                     <div>
                         {/* Title*/}
                         <div className="relative">
-                            <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                            <div className="before:absolute 
+                            before:-top-20 before:-left-20 before:z-[1] 
+                            before:content-abstractwaves">
                                 <motion.div
                                     initial="hidden"
                                     whileInView="visible"
@@ -148,7 +156,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         </motion.div>
                         {/* Button*/}
                         <div className="relative mt-16">
-                            <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                            <div className="before:absolute
+                             before:-bottom-20 before:right-40 
+                             before:z-[-1] before:content-sparkles">
                                 <ActionButton setSelectedPage={setSelectedPage}>
                                     Join Now
                                 </ActionButton>

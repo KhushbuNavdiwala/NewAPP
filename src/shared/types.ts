@@ -13,6 +13,6 @@ export interface BenefitType {
 
 export interface ClassType {
     name: string;
-    description?: string;
+    description?: string; // putting ? is option for optional
     image: string;
 }

@@ -10,10 +10,14 @@ type Props = {
 const ActionButton = ({ children, setSelectedPage }: Props) => {
     return (
         <AnchorLink
-            className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
+            className="rounded-md bg-secondary-500 px-10 py-2
+             hover:bg-primary-500 hover:text-white"
             //we can nevigate to page when we click Actionbutton
-            onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+
+            onClick={() => setSelectedPage(SelectedPage.ContactUs)}//this conactus page come from shared/type.ts enum
+
             href={`${SelectedPage.ContactUs}`}>
+                
             {children}
         </AnchorLink>
     )

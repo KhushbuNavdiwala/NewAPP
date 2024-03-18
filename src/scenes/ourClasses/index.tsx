@@ -46,21 +46,20 @@ const classes: Array<ClassType> = [
 
 ];
 
-
-
-
 type Props = {
 
     setSelectedPage: (value: SelectedPage) => void;
 
 };
 
-export const ourClasses = ({ setSelectedPage }: Props) => {
+ const ourClasses = ({ setSelectedPage }: Props) => {
     return (
         <section
-            id="ourClasses" className="w-full bg-primary-100 py-40">
+            id="ourClasses" className="w-full 
+            bg-primary-100 py-40">
             <motion.div
-                onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}  >
+                onViewportEnter={() => 
+                setSelectedPage(SelectedPage.OurClasses)}  >
                 <motion.div
                     className="mx-auto w-5/6"
                     initial="hidden"
@@ -73,15 +72,18 @@ export const ourClasses = ({ setSelectedPage }: Props) => {
                     }}>
                     <div className="md:w-3/5">
                         <HText>OUR CLASSES</HText>
-                        <p className="py-5"> Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                            tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                            facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                            enim mattis odio in risus nunc.</p>
+                 <p className="py-5"> 
+                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+               tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                  facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                 enim mattis odio in risus nunc.
+                 </p>
 
                     </div>
 
                 </motion.div>
-                <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+                <div className="mt-10 h-[353px] w-full 
+                overflow-x-auto overflow-y-hidden">
                     <ul className="w-[2800px] whitespace-nowrap">
                         {classes.map((item: ClassType, index) => (
                             <Class
