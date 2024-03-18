@@ -1,4 +1,4 @@
-#Fitness Application using React.js.
+Fitness Application using React.js.
 Typescript responsive Fitness application using ReactJS. It has 4 core components: Home, Benefits, OurClasses, and Contact US. For animation, I used Framer Motion which is a powerful motion Reactlibrary and I also created a side-scroller in this application in the OurClasses component. For the login page, I used Formikform. 
  # Features
 Real-time weather data retrieval from OpenWeatherMap API.\
