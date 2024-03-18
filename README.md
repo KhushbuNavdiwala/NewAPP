@@ -27,6 +27,8 @@ Framer Motion which is a powerful motion Reactlibrary and I also created a side-
 
 
 
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
