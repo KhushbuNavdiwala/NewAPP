@@ -5,7 +5,7 @@ It has 4 core components: Home, Benefits, OurClasses, and Contact US.\
 Framer Motion which is a powerful motion Reactlibrary and I also created a side-scroller in this application in the OurClasses component.
 # Components
 
-![image](https://github.com/KhushbuNavdiwala/WEATHER_APP_API/assets/77695748/22a006ca-91de-4d74-b26f-97d31865bd44)
+![image](https://github.com/KhushbuNavdiwala/)
 
 ![image](https://github.com/KhushbuNavdiwala/WEATHER_APP_API/assets/77695748/37e0d8a1-b034-4b39-8648-a796518c40af)
 
