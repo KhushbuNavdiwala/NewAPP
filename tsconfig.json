@@ -27,7 +27,8 @@
   },
   "include": [
     "src",
-    "prettier.config.cjs"
+    "prettier.config.cjs",
+    "node_modules/react-hook-form/**/*" 
   ],
   "references": [
     {
