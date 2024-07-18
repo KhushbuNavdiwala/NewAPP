@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"], 
+      "react-hook-form": ["node_modules/react-hook-form/dist/index.d.ts"]
+      
     },
     "target": "ES2020",
     "useDefineForClassFields": true,
